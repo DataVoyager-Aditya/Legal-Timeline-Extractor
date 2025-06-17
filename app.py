@@ -3,6 +3,7 @@ import streamlit as st
 import sys
 import os
 from pathlib import Path
+from streamlit_extras.switch_page_button import switch_page
 
 # Add src directory to Python path for imports
 current_dir = Path(__file__).parent
@@ -133,20 +134,19 @@ def main():
 
     with col1:
         if st.button("📤 Upload Documents", key="upload_btn"):
-            st.switch_page("pages/document_upload.py")
+            switch_page("document_upload")
 
     with col2:
         if st.button("📊 Build Timeline", key="timeline_btn"):
-            st.switch_page("pages/timeline_builder.py")
+            switch_page("timeline_builder")
 
     with col3:
         if st.button("📄 Export Reports", key="export_btn"):
-            st.switch_page("pages/export_manager.py")
+            switch_page("export_manager")
 
     with col4:
         if st.button("⚙️ Settings", key="settings_btn"):
-            st.switch_page("pages/settings.py")
-
+            switch_page("settings")
     # Feature overview
     st.markdown("## 🚀 Key Features")
 
