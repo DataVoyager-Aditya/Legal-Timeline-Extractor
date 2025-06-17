@@ -171,7 +171,6 @@ def main():
     with col2:
         if st.button("📊 Build Timeline"):
             switch_page("timeline_builder")
-
     with col3:
         if st.button("📄 Export Reports"):
             st.switch_page("pages/export_manager.py")
