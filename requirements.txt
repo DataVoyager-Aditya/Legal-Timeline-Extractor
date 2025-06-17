@@ -17,7 +17,7 @@ accelerate==0.23.0
 # --- Document Processing ---
 PyMuPDF==1.23.3
 pdfplumber==0.9.0
-pdfminer.six==20230725
+pdfminer.six==20221105
 pytesseract==0.3.10
 Pillow==9.5.0
 opencv-python==4.8.0.76   # ✅ OpenCV included
