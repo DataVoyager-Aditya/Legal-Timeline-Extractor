@@ -167,16 +167,16 @@ def main():
     col1, col2, col3, col4 = st.columns(4)
     with col1:
         if st.button("🏠 Home"):
-            st.switch_page("app.py")
+            switch_page("app")  # remove ".py"
     with col2:
         if st.button("📊 Build Timeline"):
-            switch_page("timeline_builder")
+            switch_page("timeline_builder")  # already correct
     with col3:
         if st.button("📄 Export Reports"):
-            st.switch_page("pages/export_manager.py")
+            switch_page("export_manager")  # remove "pages/" and ".py"
     with col4:
         if st.button("⚙️ Settings"):
-            st.switch_page("pages/settings.py")
+            switch_page("settings")  # remove "pages/" and ".py"
 
     st.markdown("---")
 
