@@ -21,6 +21,7 @@ pdfminer.six==20221105
 pytesseract==0.3.10
 Pillow==9.5.0
 opencv-python-headless==4.9.0.80  # ✅ OpenCV included
+streamlit-extras==0.3.0
 
 # --- Email Processing ---
 extract-msg==0.44.0

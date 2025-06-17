@@ -6,7 +6,7 @@ from pathlib import Path
 import tempfile
 import hashlib
 from datetime import datetime
-
+from streamlit_extras.switch_page_button import switch_page
 # Add src directory to Python path
 current_dir = Path(__file__).parent.parent
 src_dir = current_dir / "src"
@@ -170,7 +170,8 @@ def main():
             st.switch_page("app.py")
     with col2:
         if st.button("📊 Build Timeline"):
-            st.switch_page("pages/timeline_builder.py")
+            switch_page("timeline_builder")
+
     with col3:
         if st.button("📄 Export Reports"):
             st.switch_page("pages/export_manager.py")
