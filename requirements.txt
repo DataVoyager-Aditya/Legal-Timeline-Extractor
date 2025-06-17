@@ -1,53 +1,59 @@
+# ===============================
 # AI Legal Timeline Builder Pro - Dependencies
+# Compatible with Python 3.10.10
+# ===============================
 
-# Core Application Framework
-streamlit>=1.28.0
-streamlit-extras>=0.3.0
+# --- Core Application Framework ---
+streamlit==1.28.2
+streamlit-extras==0.3.0
 
-# Machine Learning and NLP
-transformers>=4.35.0
-torch>=2.0.0
-spacy>=3.7.0
-datasets>=2.14.0
-accelerate>=0.23.0
+# --- Machine Learning and NLP ---
+transformers==4.35.2
+torch==2.0.1
+spacy==3.7.2
+datasets==2.14.5
+accelerate==0.23.0
 
-# Document Processing
-PyMuPDF>=1.23.0
-pdfplumber>=0.9.0
-pdfminer.six>=20230725
-pytesseract>=0.3.10
-Pillow>=10.0.0
-opencv-python>=4.8.0
+# --- Document Processing ---
+PyMuPDF==1.23.3
+pdfplumber==0.9.0
+pdfminer.six==20230725
+pytesseract==0.3.10
+Pillow==9.5.0
+opencv-python==4.8.0.76   # ✅ OpenCV included
 
-# Email Processing
-extract-msg>=0.44.0
+# --- Email Processing ---
+extract-msg==0.44.0
 
-# Word Document Processing
-python-docx>=0.8.11
+# --- Word Document Processing ---
+python-docx==0.8.11
 
-# Excel Processing
-openpyxl>=3.1.0
-xlsxwriter>=3.1.0
+# --- Excel Processing ---
+openpyxl==3.1.2
+xlsxwriter==3.1.6
 
-# PDF Generation
-reportlab>=4.0.0
+# --- PDF Generation ---
+reportlab==4.0.4
 
-# Data Processing
-pandas>=2.1.0
-numpy>=1.24.0
+# --- Data Processing ---
+pandas==2.1.3
+numpy==1.24.4
 
-# Visualization
-plotly>=5.17.0
-matplotlib>=3.7.0
+# --- Visualization ---
+plotly==5.17.0
+matplotlib==3.7.3
 
-# Utilities
-requests>=2.31.0
+# --- Utilities ---
+requests==2.31.0
+cryptography==41.0.3
+pyopenssl==23.2.0
+chardet==5.2.0
 
-# Optional: For faster processing
-scikit-learn>=1.3.0
-fastapi>=0.104.0
+# --- Optional: Faster Processing ---
+scikit-learn==1.3.2
+fastapi==0.104.1
 
-# Development and Testing (optional)
-pytest>=7.4.0
-black>=23.0.0
-flake8>=6.0.0
+# --- Development & Testing (Optional) ---
+pytest==7.4.4
+black==23.11.0
+flake8==6.1.0
